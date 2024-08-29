@@ -32,10 +32,6 @@ ul {
   margin: 0 auto;
 }
 
-.hover {
-  cursor: pointer;
-}
-
 .header {
   width: 100%;
   max-width: calc(100% - 20px);
@@ -141,6 +137,7 @@ ul {
   font-weight: 800;
   line-height: 15px;
   grid-area: button;
+  cursor: pointer;
 }
 
 .header__contacts-link {
@@ -153,7 +150,9 @@ ul {
   max-width: 16.76px;
   margin: 0 auto;
 }
-
+.header__link {
+  cursor: pointer;
+}
 .header__logo {
   width: 113.21px;
 }
@@ -235,6 +234,7 @@ ul {
   margin-bottom: 9px;
   width: 275px;
   height: 60px;
+  cursor: pointer;
 }
 
 .about__bonus {
