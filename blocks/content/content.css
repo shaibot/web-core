@@ -1,0 +1,12 @@
+.content {
+    max-width: calc(100% - 20px);
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 110px;
+}
+
+@media (width >=1267px) {
+    .content {
+        max-width: calc(100% - 280px);
+    }
+}

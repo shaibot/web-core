@@ -1,8 +1,162 @@
 .header {
-    width: 100%;
-    max-width: 360px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto 11px;
-    padding: 12px 14px 14px 10px;
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 11px;
+  padding: 12px 14px 14px 10px;
+}
+
+.header__menu--type--burger {
+  background-image: url(../images/phone/menu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 41px;
+}
+
+.header__menu--type--list {
+  display: none;
+  width: 100%;
+  max-width: 382px;
+  align-items: center;
+  margin-right: 34px;
+}
+
+.header__menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header__menu-item {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+}
+
+.header__contacts {
+  text-decoration: none;
+}
+
+.header__contacts--type--small {
+  display: flex;
+  width: 52px;
+  background-color: rgb(107, 90, 249);
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.header__contacts--type--big {
+  display: none;
+  max-width: 495px;
+  width: 100%;
+  grid-template-columns: 298px 177px;
+  grid-template-rows: 36px 24px;
+  row-gap: 0px;
+  column-gap: 20px;
+  grid-template-areas: 'phone button'
+    'shedule button';
+}
+
+.header__contacts-items {
+  width: 100%;
+  max-width: 298px;
+  display: flex;
+  justify-content: space-between;
+  grid-area: phone;
+  align-items: center;
+}
+
+.header__phone-number {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 29px;
+}
+
+.header__icon {
+  width: 18px;
+  height: 18px;
+}
+
+.header__shedule {
+  color: rgb(42, 35, 103);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  margin: 0;
+  grid-area: shedule;
+  text-align: right;
+}
+
+.header__button {
+  width: 177px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  background: rgb(107, 90, 249);
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 15px;
+  grid-area: button;
+  cursor: pointer;
+}
+
+.header__contacts-link {
+  background-image: url(../images/phone/phone.svg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  max-width: 16.76px;
+  margin: 0 auto;
+}
+
+.header__link {
+  cursor: pointer;
+}
+
+.header__logo {
+  width: 113.21px;
+}
+
+@media (width >=757px) {
+  .header {
+    margin: 22px auto 41px;
+    padding-left: 31px;
+    padding-right: 22px;
   }
+}
+
+@media (width >=1267px) {
+  .header {
+    max-width: calc(100% - 280px);
+    padding: 0;
+  }
+
+  .header__logo {
+    width: 182px;
+    margin-right: 34px;
+  }
+
+  .header__menu--type--burger {
+    display: none;
+  }
+
+  .header__menu--type--list {
+    display: flex;
+  }
+
+  .header__contacts--type--small {
+    display: none;
+  }
+
+  .header__contacts--type--big {
+    display: grid;
+  }
+}
