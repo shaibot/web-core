@@ -107,7 +107,7 @@
 }
 
 .header__contacts-link {
-  background-image: url(../images/phone/phone.svg);
+  background-image: url(../../images/phone/phone.svg);
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
