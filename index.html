@@ -7,20 +7,20 @@
     <title>WebCore 1.2</title>
     <link rel="stylesheet" href="./styles/fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./blocks/body/body.css" />
-    <link rel="stylesheet" href="./blocks/header/header.css" />
-    <link rel="stylesheet" href="./blocks/content/content.css" />
-    <link rel="stylesheet" href="./blocks/about/about.css" />    
+    <link rel="stylesheet" href="./styles/body/body.css" />
+    <link rel="stylesheet" href="./styles/header/header.css" />
+    <link rel="stylesheet" href="./styles/content/content.css" />
+    <link rel="stylesheet" href="./styles/about/about.css" />    
   </head>
   <body class="body">
     <header class="header">
-      <div class="header__menu--type--burger"></div>
+      <div class="header__menu-mobile"></div>
       <img
         src="./images/phone/logo.svg"
         alt="Логотип Миллениум"
         class="header__logo"
       />
-      <nav class="header__menu--type--list">
+      <nav class="header__menu-desktop">
         <ul class="header__menu-list">
           <li class="header__menu-item"><a href="#" class="header__link">Главная</a></li>
           <li class="header__menu-item"><a href="#" class="header__link">Цели</a></li>
@@ -28,10 +28,10 @@
           <li class="header__menu-item"><a href="#" class="header__link">Контакты</a></li>
         </ul>
       </nav>
-      <address class="header__contacts header__contacts--type--small">
+      <address class="header__contacts header__contacts--mobile-viewport">
         <a href="tel:+77778889900" class="header__contacts-link"></a>
       </address>
-      <div class="header__contacts header__contacts--type--big">
+      <div class="header__contacts header__contacts--desktop-viewport">
         <address class="header__contacts-items">
           <a href="tel:+77778889900" class="header__icon">
             <img src="./images/desktop/telegram.svg" alt="Ссылка на телеграм" />
@@ -80,6 +80,5 @@
         </p>
       </section>
     </main>
-    <!-- <footer class="footer"></footer> -->
   </body>
 </html>
