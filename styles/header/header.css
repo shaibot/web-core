@@ -133,12 +133,14 @@
   }
 }
 
-@media (min-width: 1267px) {
+@media (min-width: 1100px) {
   .header {
     max-width: calc(100% - 280px);
     padding: 35px 0 25px;
   }
+}
 
+@media (min-width: 1267px) {
   .header__logo {
     width: 182px;
     margin-right: 34px;
