@@ -118,12 +118,6 @@
 
 @media (min-width: 1200px) {
     .about {
-        max-width: calc(100% - 280px);
-    }
-}
-
-@media (min-width: 1267px) {
-    .about {
         padding-top: 26px;
     }
 
