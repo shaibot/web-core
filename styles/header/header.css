@@ -3,15 +3,23 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 16px 14px 14px 10px;
+  padding: 16px 14px 20px 10px;
+  box-shadow: 0px 1px 4px -1px rgba(0, 0, 0, 0.25);
 }
 
-.header__menu-mobile {
-  background-image: url(../../images/phone/menu.svg);
+.header__menu-mobile {  
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   width: 41px;
+}
+
+.header__menu-mobile--no-active {
+background-image: url(../../images/phone/menu.svg);
+}
+
+.header__menu-mobile--active {
+  background-image: url(../../images/phone/menu-active.svg);
 }
 
 .header__menu-desktop {
