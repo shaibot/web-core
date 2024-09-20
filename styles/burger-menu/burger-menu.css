@@ -1,9 +1,14 @@
 .burger-menu {
+    background-color: rgba(163, 161, 161, 0.85);
     position: fixed;
-    width: 100%;
+    /* width: 100%; */
     z-index: 1;
-    top: 0;
+    top: 71px;
     left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    overflow: scroll;
 }
 
 /* .burger-menu__header {

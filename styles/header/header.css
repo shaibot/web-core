@@ -1,9 +1,13 @@
 .header {
+  position: sticky;
+  top:0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   padding: 16px 14px 20px 10px;
+  background-color: white;
+  z-index: 1; 
 }
 
 .header__menu-mobile {  

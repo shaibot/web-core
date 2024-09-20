@@ -1,9 +1,11 @@
 .menu {
-    background-color: rgba(163, 161, 161, 0.85);
-    box-shadow: 0px -2px 3px -2px rgba(0, 0, 0, 0.25);
+    /* background-color: rgba(163, 161, 161, 0.85); */
+    box-shadow: inset 0px 5px 4px -3px rgba(0, 0, 0, 0.25);
+    height: 100%;
 }
 
 .menu__container {
+    box-shadow: inset 0px 5px 4px -3px rgba(0, 0, 0, 0.25);
     background-color: rgb(255, 255, 255);
     position: relative;
     width: 100%;
@@ -14,7 +16,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 225px;
+    padding-bottom: 50px;
+    
 }
 
 .menu-list {
@@ -26,12 +29,16 @@
 }
 
 .menu__button-close {
+    padding: 0;
     border: none;
     width: 14px;
     height: 14px;
-    background-image: url(../../images/phone/close-btn.svg);
+    background-image: url(../../images/phone/close.svg);
     background-position: center;
+    background-color: transparent;
+    background-size: cover;
     background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
     top: 24px;
     left: 10px;
@@ -73,4 +80,10 @@
 
 .menu__shedule {
     margin-top: 0;
+}
+
+@media (min-width: 380px) {
+    .menu__button-close {
+        transform: translateX(318px);
+    }
 }
