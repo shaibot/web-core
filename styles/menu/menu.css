@@ -8,8 +8,12 @@
     bottom: 0;
     right: 0;
     height: 100vh;
+    display: none;
 }
 
+.menu--opened {
+    display: block;
+}
 .menu__container {
     position: relative;
     display: flex;
