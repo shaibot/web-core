@@ -11,10 +11,6 @@
     overflow: scroll;
 }
 
-/* .burger-menu__header {
-    box-shadow: 0px 5px 4px -3px rgba(0, 0, 0, 0.25);
-} */
-
 @media (min-width: 1267px) {
     .burger-menu {
         display: none;

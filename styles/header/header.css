@@ -1,28 +1,36 @@
 .header {
   position: sticky;
-  top:0;
+  top: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   padding: 16px 14px 20px 10px;
   background-color: white;
-  z-index: 1; 
+  z-index: 1;
 }
 
-.header__menu-mobile {  
+.header__menu-mobile-btn {
+  border: 0;
+  padding: 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  background-color: white;
   width: 41px;
   cursor: pointer;
+  transition-property: background-image, transform;
+  ;
+  transition-duration: 1s;
 }
 
-.header__menu-mobile--no-active {
-background-image: url(../../images/phone/menu.svg);
+.header__menu-mobile-btn--no-active {
+  transform: rotate(360deg);
+  background-image: url(../../images/phone/menu.svg);
 }
 
-.header__menu-mobile--active {
+.header__menu-mobile-btn--active {
+  transform: rotate(-360deg);
   background-image: url(../../images/phone/menu-active.svg);
 }
 

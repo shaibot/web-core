@@ -1,23 +1,29 @@
 .menu {
-    /* background-color: rgba(163, 161, 161, 0.85); */
     box-shadow: inset 0px 5px 4px -3px rgba(0, 0, 0, 0.25);
-    height: 100%;
+    background-color: rgba(163, 161, 161, 0.85);
+    position: fixed;
+    z-index: 1;
+    top: 71px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
 }
 
 .menu__container {
-    box-shadow: inset 0px 5px 4px -3px rgba(0, 0, 0, 0.25);
-    background-color: rgb(255, 255, 255);
     position: relative;
-    width: 100%;
-    max-width: 360px;
-    margin: 0;
-    padding-top: 62px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 50px;
-    
+    box-shadow: inset 0px 5px 4px -3px rgba(0, 0, 0, 0.25);
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 360px;
+    height: 100vh;
+    margin: 0;
+    padding-top: 62px;
+    padding-bottom: 88px;    
 }
 
 .menu-list {
@@ -42,6 +48,7 @@
     position: absolute;
     top: 24px;
     left: 10px;
+    cursor: pointer;
 }
 
 .menu__link {
@@ -53,7 +60,7 @@
 }
 
 .menu__link:hover {
-    filter: invert(20%) drop-shadow(4px 4px 10px rgb(16, 174, 227));
+    filter: invert(20%) drop-shadow(4px 4px 5px rgb(107, 90, 249));
 }
 
 .menu__container-contacts {
@@ -79,11 +86,17 @@
 }
 
 .menu__shedule {
-    margin-top: 0;
+    margin: 0;
 }
 
 @media (min-width: 380px) {
     .menu__button-close {
         transform: translateX(318px);
+    }
+}
+
+@media (min-width: 1267px) {
+    .menu {
+        display: none;
     }
 }
