@@ -1,6 +1,6 @@
 .menu {
     box-shadow: inset 0px 5px 4px -3px rgba(0, 0, 0, 0.25);
-    background-color: rgba(163, 161, 161, 0.85);
+    background-color: var(--lightbox-background-color);
     position: fixed;
     z-index: 1;
     top: 71px;
@@ -21,7 +21,7 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: inset 0px 5px 4px -3px rgba(0, 0, 0, 0.25);
-    background-color: rgb(255, 255, 255);
+    background-color: var(--main-background-color);
     width: 100%;
     max-width: 360px;
     height: 100vh;
@@ -64,7 +64,7 @@
 }
 
 .menu__link:hover {
-    filter: invert(20%) drop-shadow(4px 4px 5px rgb(107, 90, 249));
+    filter: invert(20%) drop-shadow(4px 4px 5px var(--accent-color));
 }
 
 .menu__container-contacts {
@@ -74,7 +74,7 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 22px;
-    color: rgb(107, 90, 249);
+    color: var(--accent-color);
     letter-spacing: 0;
 }
 

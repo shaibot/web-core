@@ -15,14 +15,6 @@
     margin: 0;
 }
 
-.about__accent {
-    color: rgb(107, 90, 249);
-}
-
-.accent-text {
-    font-weight: 700;
-}
-
 .about__container {
     position: relative;
     overflow: hidden;
@@ -52,8 +44,8 @@
 .about__button {
     border: none;
     border-radius: 5px;
-    background: rgb(107, 90, 249);
-    color: rgb(255, 255, 255);
+    background: var(--button-background-color);
+    color: var(--button-text-color);
     font-size: 12px;
     font-weight: 800;
     line-height: 15px;

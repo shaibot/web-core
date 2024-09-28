@@ -1,0 +1,181 @@
+.site-properties {
+  margin-top: 150px;
+  margin-bottom: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-properties__title {
+  margin: 0 0 54px;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+  letter-spacing: 0;
+}
+
+.site-properties__item {
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+}
+
+.site-properties__number {
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  text-align: left;
+}
+
+.site-properties__subtitle {
+  width: 100%;
+  max-width: 175px;
+  padding-bottom: 9px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0;
+  border-bottom: 2px solid rgb(227, 117, 117);
+  margin-top: 0;
+  margin-bottom: 9px;
+  text-align: left;
+}
+
+.site-properties__description {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0;
+  text-align: left;
+  width: 100%;
+  max-width: 295px;
+}
+
+.site-properties__btn-arrow {
+  margin-top: 32px;
+  margin-bottom: 33px;
+  border: none;
+  padding: 0;
+  background-image: url(../../images/desktop/arrow.svg);
+  width: 18px;
+  height: 11px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: inherit;
+  transition: transform 1s;
+  display: none;
+  cursor: pointer;
+}
+
+.site-properties__btn-arrow--opened {
+  transform: rotate(180deg);
+}
+
+.site-properties__btn-cost {
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  width: 275px;
+  height: 60px;
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 15px;
+  letter-spacing: 0;
+  margin-top: 32px;
+  cursor: pointer;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.swiper-wrapper {
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+
+.swiper-slide {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  opacity: 0;
+  padding-left: 15px;
+  height: 200px;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+}
+
+.swiper-pagination {
+  bottom: 0;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: rgb(221, 221, 221);
+}
+
+.swiper-pagination-bullet-active {
+  background: rgb(181, 182, 188);
+}
+
+@media (min-width: 361px) {
+  .swiper-slide {
+    visibility: visible; /* Делаем слайды видимыми */
+    opacity: 1; /* Устраняем возможные проблемы с прозрачностью */
+    transform: translateX(0); /* Убираем любые трансформации */
+    pointer-events: auto; /* Позволяем взаимодействие с элементами */
+  }
+
+  .swiper-wrapper {
+    display: block; /* Делаем обертку обычным блочным элементом */
+    margin-bottom: 0;
+  }
+
+  .site-properties__list {
+    width: 100%;
+    max-width: 1440px;
+    height: 230px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 373px));
+    grid-template-rows: min-content;
+    gap: 54px 20px;
+    justify-content: center;
+    transition: 1s;
+padding-top: 15px;
+padding-left: 12px;
+padding-right: 12px;
+margin-top: -15px;
+margin-left: -12px;
+margin-right: -12px;
+  }
+
+  .site-properties__btn-arrow {
+    display: block;
+  }
+
+  .site-properties__btn-cost {
+    margin-top: 0;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+/* Убираем трансформации для swiper на больших экранах */
+@media (max-width: 360px) {
+  .swiper-slide {
+    transition: transform 0.3s; /* плавный переход для мобильных */
+  }
+}

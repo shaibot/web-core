@@ -5,17 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebCore 1.2</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./styles/body/body.css" />
     <link rel="stylesheet" href="./styles/header/header.css" />
     <link rel="stylesheet" href="./styles/content/content.css" />
     <link rel="stylesheet" href="./styles/about/about.css" />
     <link rel="stylesheet" href="./styles/menu/menu.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/site-properties/site-properties.css"
+    />
   </head>
   <body class="body">
     <header class="header">
-      <button class="header__menu-mobile-btn header__menu-mobile-btn--active"></button>
+      <button
+        class="header__menu-mobile-btn header__menu-mobile-btn--no-active"
+      ></button>
       <img
         src="./images/phone/logo.svg"
         alt="Логотип Миллениум"
@@ -23,10 +34,18 @@
       />
       <nav class="header__menu-desktop">
         <ul class="header__menu-list">
-          <li class="header__menu-item"><a href="#" class="header__link">Главная</a></li>
-          <li class="header__menu-item"><a href="#" class="header__link">Цели</a></li>
-          <li class="header__menu-item"><a href="#" class="header__link">Кейсы и&nbsp;отзывы</a></li>
-          <li class="header__menu-item"><a href="#" class="header__link">Контакты</a></li>
+          <li class="header__menu-item">
+            <a href="#" class="header__link">Главная</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__link">Цели</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__link">Кейсы и&nbsp;отзывы</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__link">Контакты</a>
+          </li>
         </ul>
       </nav>
       <address class="header__contacts header__contacts--mobile-viewport">
@@ -44,19 +63,25 @@
             >+ 7 (495) 555 65&nbsp;65</a
           >
         </address>
-        <p class="header__shedule">Ежедневно с <time datetime="09:00" class="header__time">09:00</time> до <time datetime="18:00" class="header__time">18:00</time></p>
-      <button class="header__button">Заказать звонок</button>
+        <p class="header__shedule">
+          Ежедневно с
+          <time datetime="09:00" class="header__time">09:00</time> до
+          <time datetime="18:00" class="header__time">18:00</time>
+        </p>
+        <button class="header__button">Заказать звонок</button>
       </div>
     </header>
-    <aside class="menu menu--opened">
-    <nav class="menu__container">
+    <aside class="menu">
+      <nav class="menu__container">
         <button class="menu__button-close"></button>
         <ul class="menu-list">
           <li class="menu-list__item">
             <a href="#" class="menu__link">Главная</a>
           </li>
           <li class="menu-list__item">
-            <a href="#" class="menu__link">Интернет-магазины, которые продают</a>
+            <a href="#" class="menu__link"
+              >Интернет-магазины, которые продают</a
+            >
           </li>
           <li class="menu-list__item">
             <a href="#" class="menu__link">Что вы&nbsp;получаете</a>
@@ -91,14 +116,14 @@
             >
           </p>
         </div>
-    </nav>
+      </nav>
     </aside>
     <main class="content">
       <section class="about">
         <div class="about__container">
           <h1 class="about__title">
             Разработка интернет-магазинов
-            <span class="about__accent">на&nbsp;1C-Битрикс</span>
+            <span class="accent-text">на&nbsp;1C-Битрикс</span>
           </h1>
           <img
             src="./images/phone/laptop.png"
@@ -109,8 +134,8 @@
         <p class="about__info">
           Разработаем интернет-магазин за&nbsp;30&nbsp;дней с&nbsp;уникальным
           дизайном и&nbsp;продуманной структурой, который
-          <span class="about__accent accent-text"
-            >выделит вас на&nbsp;фоне конкурентов</span
+          <span class="accent-text"
+            ><b class="bold-text">выделит вас на&nbsp;фоне конкурентов</b></span
           >
         </p>
         <button class="about__button">Узнать стоимость</button>
@@ -125,6 +150,80 @@
           и&nbsp;не&nbsp;только&raquo;
         </p>
       </section>
+      <section class="site-properties">
+        <h2 class="site-properties__title">
+          Мы&nbsp;создаем интернет-магазины,
+          <span class="accent-text">которые продают</span>
+        </h2>
+        <!-- Slider main container -->
+        <div class="site-properties__items swiper">
+          <!-- Additional required wrapper -->
+
+          <ul class="site-properties__list swiper-wrapper">
+            <!-- Slides -->
+            <li class="site-properties__item swiper-slide">
+              <p class="site-properties__number">01</p>
+              <h3 class="site-properties__subtitle">Удобный интерфейс</h3>
+              <p class="site-properties__description">
+                Блоковая подача информации, удобные кнопки, карточки товаров,
+                понятное меню и&nbsp;легкая навигация по&nbsp;многостраничному
+                сайту.
+              </p>
+            </li>
+
+            <li class="site-properties__item swiper-slide">
+              <p class="site-properties__number">02</p>
+              <h3 class="site-properties__subtitle">Продающая структура</h3>
+              <p class="site-properties__description">
+                Делаем анализ вашей целевой аудитории и&nbsp;вашего предложения.
+                Опираясь на&nbsp;анализ прописываем продающуюу структуру сайта.
+              </p>
+            </li>
+            <li class="site-properties__item swiper-slide">
+              <p class="site-properties__number">03</p>
+              <h3 class="site-properties__subtitle">Адаптивность</h3>
+              <p class="site-properties__description">
+                Сайт корректно отображается на&nbsp;различных устройствах,
+                элементы динамически подстраиваются под различные разрешения
+                экрана, что повышает конверсию сайта в&nbsp;покупку.
+              </p>
+            </li>
+            <li class="site-properties__item swiper-slide">
+              <p class="site-properties__number">04</p>
+              <h3 class="site-properties__subtitle">Уникальный дизайн</h3>
+              <p class="site-properties__description">
+                Не&nbsp;пользуемся шаблонными решениями. Под каждый проект
+                разрабатывается индивидуальный дизайн который подчеркнет имидж
+                компании
+              </p>
+            </li>
+
+            <li class="site-properties__item swiper-slide">
+              <p class="site-properties__number">05</p>
+              <h3 class="site-properties__subtitle">Защита и безопасность</h3>
+              <p class="site-properties__description">
+                Подключаем HTPS протокол, защиту от&nbsp;DDOS атак, чтобы данные
+                клиентов были в&nbsp;безопасности.
+              </p>
+            </li>
+
+            <li class="site-properties__item swiper-slide">
+              <p class="site-properties__number">06</p>
+              <h3 class="site-properties__subtitle">SEO оптимизация</h3>
+              <p class="site-properties__description">
+                Сайты соответствуют требованиям поисковой оптимизации, они без
+                труда покоряют топы поисковой выдачи Яндекс и&nbsp;Google.
+              </p>
+            </li>
+          </ul>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <button class="site-properties__btn-arrow"></button>
+        <button class="site-properties__btn-cost">Узнать стоимость</button>
+      </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
