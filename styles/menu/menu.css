@@ -3,16 +3,18 @@
     background-color: var(--lightbox-background-color);
     position: fixed;
     z-index: 1;
-    top: 71px;
-    left: 0;
+    top: 171px;
+    left: -400px;
     bottom: 0;
     right: 0;
     height: 100vh;
-    display: none;
+    transform: scale(0);
+    transform-origin: 0% 0%;
+    transition: transform .5s ease-out;
 }
 
 .menu--opened {
-    display: block;
+    transform: scale(1) translateX(400px) translateY(-100px);
 }
 .menu__container {
     position: relative;
@@ -96,11 +98,5 @@
 @media (min-width: 380px) {
     .menu__button-close {
         transform: translateX(318px);
-    }
-}
-
-@media (min-width: 1267px) {
-    .menu {
-        display: none;
     }
 }

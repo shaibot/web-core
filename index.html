@@ -21,6 +21,8 @@
       rel="stylesheet"
       href="./styles/site-properties/site-properties.css"
     />
+    <link rel="stylesheet" href="./styles/you-get/you-get.css" />
+
   </head>
   <body class="body">
     <header class="header">
@@ -138,7 +140,7 @@
             ><b class="bold-text">выделит вас на&nbsp;фоне конкурентов</b></span
           >
         </p>
-        <button class="about__button">Узнать стоимость</button>
+        <button class="about__button button-find-cost">Узнать стоимость</button>
         <p class="about__bonus">
           <span class="about__accent"
             >Оставьте заявку и&nbsp;получите бесплатную консультацию
@@ -150,17 +152,13 @@
           и&nbsp;не&nbsp;только&raquo;
         </p>
       </section>
-      <section class="site-properties">
+     <section class="site-properties">
         <h2 class="site-properties__title">
           Мы&nbsp;создаем интернет-магазины,
           <span class="accent-text">которые продают</span>
         </h2>
-        <!-- Slider main container -->
         <div class="site-properties__items swiper">
-          <!-- Additional required wrapper -->
-
           <ul class="site-properties__list swiper-wrapper">
-            <!-- Slides -->
             <li class="site-properties__item swiper-slide">
               <p class="site-properties__number">01</p>
               <h3 class="site-properties__subtitle">Удобный интерфейс</h3>
@@ -170,7 +168,6 @@
                 сайту.
               </p>
             </li>
-
             <li class="site-properties__item swiper-slide">
               <p class="site-properties__number">02</p>
               <h3 class="site-properties__subtitle">Продающая структура</h3>
@@ -197,7 +194,6 @@
                 компании
               </p>
             </li>
-
             <li class="site-properties__item swiper-slide">
               <p class="site-properties__number">05</p>
               <h3 class="site-properties__subtitle">Защита и безопасность</h3>
@@ -206,7 +202,6 @@
                 клиентов были в&nbsp;безопасности.
               </p>
             </li>
-
             <li class="site-properties__item swiper-slide">
               <p class="site-properties__number">06</p>
               <h3 class="site-properties__subtitle">SEO оптимизация</h3>
@@ -216,11 +211,71 @@
               </p>
             </li>
           </ul>
-          <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
         </div>
         <button class="site-properties__btn-arrow"></button>
-        <button class="site-properties__btn-cost">Узнать стоимость</button>
+        <button class="site-properties__btn-cost button-find-cost">Узнать стоимость</button>
+      </section>
+      <section class="you-get">
+        <h2 class="you-get__title">Что вы&nbsp;<span class="accent-text">получаете ?</span></h2>
+        <ul class="you-get__container">
+          <li class="you-get__item">
+            <figure class="you-get__card">
+              <img src="./images/phone/phone-with-message.png" alt="На смартфон пришло уведомление о сообщении" class="you-get__image">
+              <figcaption class="you-get__description">
+                <h4 class="you-get__subtitle accent-text">Каталог товаров</h4>
+                <ul class="you-get__description-card">
+                  <li class="you-get__description-card-item">возможность выгружать свои товары в&nbsp;неограниченном количестве</li>
+                  <li class="you-get__description-card-item">добавлять и&nbsp;редактировать описание товаров</li>
+                  <li class="you-get__description-card-item">сортировать товары по&nbsp;заданным критериям</li>
+                  <li class="you-get__description-card-item">моментальная оплата товара или оформление при помощи добавления корзины</li>
+                </ul>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="you-get__item">
+            <figure class="you-get__card">
+              <img src="./images/phone/man-with-phone-market.png" alt="Человек делает заказ на сайте через смартфон" class="you-get__image">
+              <figcaption class="you-get__description">
+                <h4 class="you-get__subtitle accent-text">Оформление заказа</h4>
+                <ul class="you-get__description-card">
+                  <li class="you-get__description-card-item">личный кабинет</li>
+                  <li class="you-get__description-card-item">корзина с&nbsp;отображением выбранных товаров</li>
+                  <li class="you-get__description-card-item">оформление заказа с&nbsp;указанием контактных данных</li>
+                  <li class="you-get__description-card-item">возможность приема онлайн-платежей</li>
+                  <li class="you-get__description-card-item">использование купонов, скидок и&nbsp;специальных предложений</li>
+                </ul>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="you-get__item">
+            <figure class="you-get__card">
+              <img src="./images/phone/man-sit-laptop.png" alt="Мультипликационное изображение маленького человечка, сидящего на экране большого ноутбука" class="you-get__image">
+              <figcaption class="you-get__description">
+                <h4 class="you-get__subtitle accent-text">Интеграции</h4>
+                <ul class="you-get__description-card">
+                  <li class="you-get__description-card-item">1С, Мой склад (выгрузка товаров на&nbsp;сайт, полная синхронизация)</li>
+                  <li class="you-get__description-card-item">Маркетплейсы (Яндекс.Маркет, Wildberries, Goods, Ozon)</li>
+                  <li class="you-get__description-card-item">Интеграция со&nbsp;службами доставки СДЭК, Почта России</li>
+                </ul>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="you-get__item">
+            <figure class="you-get__card">
+              <img src="./images/phone/people-with-laptop.png" alt="Маленькие человечки стоят вокруг большого ноутбука" class="you-get__image">
+              <figcaption class="you-get__description">
+                <h4 class="you-get__subtitle accent-text">CRM</h4>
+                <ul class="you-get__description-card">
+                  <li class="you-get__description-card-item">фиксация и&nbsp;отслеживание поступивших заявок</li>
+                  <li class="you-get__description-card-item">уведомления о заказах</li>
+                  <li class="you-get__description-card-item">отчетность магазина</li>
+                </ul>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+        <button class="you-get__btn-cost button-find-cost">Узнать стоимость</button>
       </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

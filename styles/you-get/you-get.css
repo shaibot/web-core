@@ -1,0 +1,75 @@
+.you-get {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.you-get__title {
+    font-size: 18px;
+font-weight: 800;
+line-height: 22px;
+letter-spacing: 0;
+margin-bottom: 37px;
+align-self: start;
+}
+
+.you-get__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.you-get__item {
+    width: 100%;
+}
+
+.you-get__card {
+    margin: 0;
+}
+
+.you-get__description-card {
+    list-style-image: url(../../images/phone/Ellipse.svg);
+    margin-left: 15px;
+    }
+
+.you-get__subtitle {
+    font-size: 18px;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0;
+margin-top: 0;
+margin-bottom: 17px;
+}
+
+.you-get__description-card-item {
+    font-size: 12px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: 0;
+padding-left: 4px;
+}
+
+@media (min-width: 760px) {
+    .you-get__container {
+        row-gap: 30px;
+        margin-bottom: 80px;
+    }
+    .you-get__card {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    .you-get__image {
+        width: 50%;
+    }
+
+.you-get__description {
+    width: 50%;
+}
+.you-get__item:nth-child(even) .you-get__card {
+    flex-direction: row-reverse;
+}
+}

@@ -44,3 +44,17 @@ ul {
 .bold-text {
   font-weight: 700;
 }
+.button-find-cost {
+  border: none;
+  border-radius: 5px;
+  background: var(--button-background-color);
+  color: var(--button-text-color);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 15px;
+  width: 275px;
+  height: 60px;
+  cursor: pointer;
+}
+
+/* * {outline: 1px solid red;} */
