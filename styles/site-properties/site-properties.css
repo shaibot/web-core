@@ -142,9 +142,8 @@
     padding-top: 15px;
     padding-left: 12px;
     padding-right: 12px;
-    margin-top: -15px;
-    margin-left: -12px;
-    margin-right: -12px;
+    padding-bottom: 15px;
+    margin: 0 auto;
   }
 
   .site-properties__btn-arrow {
@@ -159,8 +158,9 @@
   }
 }
 
-/* @media (max-width: 360px) {
-  .swiper-slide {
-    transition: transform 0.3s; /* плавный переход для мобильных */
-  /* } */
-/* } */ 
+@media (min-width: 1260px) {
+    .site-properties__items {
+      display: flex;
+      align-items: center;
+    }
+}
