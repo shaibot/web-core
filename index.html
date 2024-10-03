@@ -22,7 +22,12 @@
       href="./styles/site-properties/site-properties.css"
     />
     <link rel="stylesheet" href="./styles/you-get/you-get.css" />
-
+    <link rel="stylesheet" href="./styles/certificates/certificates.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/business-research/business-research.css"
+    />
+    <link rel="stylesheet" href="./styles/stages/stages.css" />
   </head>
   <body class="body">
     <header class="header">
@@ -140,19 +145,23 @@
             ><b class="bold-text">выделит вас на&nbsp;фоне конкурентов</b></span
           >
         </p>
-        <button class="about__button button-find-cost">Узнать стоимость</button>
-        <p class="about__bonus">
-          <span class="about__accent"
-            >Оставьте заявку и&nbsp;получите бесплатную консультацию
-            от&nbsp;специалиста, полный расчет стоимости разработки
-            и&nbsp;бонус:</span
-          >
-          &laquo;15&nbsp;сервисов, которые покажут стратегию продвижения
-          конкурентов, всё об&nbsp;их&nbsp;выдаче в&nbsp;поиске
-          и&nbsp;не&nbsp;только&raquo;
-        </p>
+        <div class="about__order">
+          <button class="about__button button-find-cost">
+            Узнать стоимость
+          </button>
+          <p class="about__bonus">
+            <span class="accent-text"
+              >Оставьте заявку и&nbsp;получите бесплатную консультацию
+              от&nbsp;специалиста, полный расчет стоимости разработки
+              и&nbsp;бонус:</span
+            >
+            &laquo;15&nbsp;сервисов, которые покажут стратегию продвижения
+            конкурентов, всё об&nbsp;их&nbsp;выдаче в&nbsp;поиске
+            и&nbsp;не&nbsp;только&raquo;
+          </p>
+        </div>
       </section>
-     <section class="site-properties">
+      <section class="site-properties">
         <h2 class="site-properties__title">
           Мы&nbsp;создаем интернет-магазины,
           <span class="accent-text">которые продают</span>
@@ -214,68 +223,304 @@
           <div class="swiper-pagination"></div>
         </div>
         <button class="site-properties__btn-arrow"></button>
-        <button class="site-properties__btn-cost button-find-cost">Узнать стоимость</button>
+        <button class="site-properties__btn-cost button-find-cost">
+          Узнать стоимость
+        </button>
       </section>
       <section class="you-get">
-        <h2 class="you-get__title">Что вы&nbsp;<span class="accent-text">получаете ?</span></h2>
+        <h2 class="you-get__title title">
+          Что вы&nbsp;<span class="accent-text">получаете ?</span>
+        </h2>
         <ul class="you-get__container">
           <li class="you-get__item">
             <figure class="you-get__card">
-              <img src="./images/phone/phone-with-message.png" alt="На смартфон пришло уведомление о сообщении" class="you-get__image">
+              <img
+                src="./images/phone/phone-with-message.png"
+                alt="На смартфон пришло уведомление о сообщении"
+                class="you-get__image"
+              />
               <figcaption class="you-get__description">
                 <h4 class="you-get__subtitle accent-text">Каталог товаров</h4>
                 <ul class="you-get__description-card">
-                  <li class="you-get__description-card-item">возможность выгружать свои товары в&nbsp;неограниченном количестве</li>
-                  <li class="you-get__description-card-item">добавлять и&nbsp;редактировать описание товаров</li>
-                  <li class="you-get__description-card-item">сортировать товары по&nbsp;заданным критериям</li>
-                  <li class="you-get__description-card-item">моментальная оплата товара или оформление при помощи добавления корзины</li>
+                  <li class="you-get__description-card-item">
+                    возможность выгружать свои товары в&nbsp;неограниченном
+                    количестве
+                  </li>
+                  <li class="you-get__description-card-item">
+                    добавлять и&nbsp;редактировать описание товаров
+                  </li>
+                  <li class="you-get__description-card-item">
+                    сортировать товары по&nbsp;заданным критериям
+                  </li>
+                  <li class="you-get__description-card-item">
+                    моментальная оплата товара или оформление при помощи
+                    добавления корзины
+                  </li>
                 </ul>
               </figcaption>
             </figure>
           </li>
           <li class="you-get__item">
             <figure class="you-get__card">
-              <img src="./images/phone/man-with-phone-market.png" alt="Человек делает заказ на сайте через смартфон" class="you-get__image">
+              <img
+                src="./images/phone/man-with-phone-market.png"
+                alt="Человек делает заказ на сайте через смартфон"
+                class="you-get__image"
+              />
               <figcaption class="you-get__description">
                 <h4 class="you-get__subtitle accent-text">Оформление заказа</h4>
                 <ul class="you-get__description-card">
                   <li class="you-get__description-card-item">личный кабинет</li>
-                  <li class="you-get__description-card-item">корзина с&nbsp;отображением выбранных товаров</li>
-                  <li class="you-get__description-card-item">оформление заказа с&nbsp;указанием контактных данных</li>
-                  <li class="you-get__description-card-item">возможность приема онлайн-платежей</li>
-                  <li class="you-get__description-card-item">использование купонов, скидок и&nbsp;специальных предложений</li>
+                  <li class="you-get__description-card-item">
+                    корзина с&nbsp;отображением выбранных товаров
+                  </li>
+                  <li class="you-get__description-card-item">
+                    оформление заказа с&nbsp;указанием контактных данных
+                  </li>
+                  <li class="you-get__description-card-item">
+                    возможность приема онлайн-платежей
+                  </li>
+                  <li class="you-get__description-card-item">
+                    использование купонов, скидок и&nbsp;специальных предложений
+                  </li>
                 </ul>
               </figcaption>
             </figure>
           </li>
           <li class="you-get__item">
             <figure class="you-get__card">
-              <img src="./images/phone/man-sit-laptop.png" alt="Мультипликационное изображение маленького человечка, сидящего на экране большого ноутбука" class="you-get__image">
+              <img
+                src="./images/phone/man-sit-laptop.png"
+                alt="Мультипликационное изображение маленького человечка, сидящего на экране большого ноутбука"
+                class="you-get__image"
+              />
               <figcaption class="you-get__description">
                 <h4 class="you-get__subtitle accent-text">Интеграции</h4>
                 <ul class="you-get__description-card">
-                  <li class="you-get__description-card-item">1С, Мой склад (выгрузка товаров на&nbsp;сайт, полная синхронизация)</li>
-                  <li class="you-get__description-card-item">Маркетплейсы (Яндекс.Маркет, Wildberries, Goods, Ozon)</li>
-                  <li class="you-get__description-card-item">Интеграция со&nbsp;службами доставки СДЭК, Почта России</li>
+                  <li class="you-get__description-card-item">
+                    1С, Мой склад (выгрузка товаров на&nbsp;сайт, полная
+                    синхронизация)
+                  </li>
+                  <li class="you-get__description-card-item">
+                    Маркетплейсы (Яндекс.Маркет, Wildberries, Goods, Ozon)
+                  </li>
+                  <li class="you-get__description-card-item">
+                    Интеграция со&nbsp;службами доставки СДЭК, Почта России
+                  </li>
                 </ul>
               </figcaption>
             </figure>
           </li>
           <li class="you-get__item">
             <figure class="you-get__card">
-              <img src="./images/phone/people-with-laptop.png" alt="Маленькие человечки стоят вокруг большого ноутбука" class="you-get__image">
+              <img
+                src="./images/phone/people-with-laptop.png"
+                alt="Маленькие человечки стоят вокруг большого ноутбука"
+                class="you-get__image"
+              />
               <figcaption class="you-get__description">
                 <h4 class="you-get__subtitle accent-text">CRM</h4>
                 <ul class="you-get__description-card">
-                  <li class="you-get__description-card-item">фиксация и&nbsp;отслеживание поступивших заявок</li>
-                  <li class="you-get__description-card-item">уведомления о заказах</li>
-                  <li class="you-get__description-card-item">отчетность магазина</li>
+                  <li class="you-get__description-card-item">
+                    фиксация и&nbsp;отслеживание поступивших заявок
+                  </li>
+                  <li class="you-get__description-card-item">
+                    уведомления о заказах
+                  </li>
+                  <li class="you-get__description-card-item">
+                    отчетность магазина
+                  </li>
                 </ul>
               </figcaption>
             </figure>
           </li>
         </ul>
-        <button class="you-get__btn-cost button-find-cost">Узнать стоимость</button>
+        <button class="you-get__btn-cost button-find-cost">
+          Узнать стоимость
+        </button>
+      </section>
+      <section class="certificates">
+        <div class="certificates__container">
+          <figure class="certificates__gold-bitrix">
+            <img
+              src="./images/phone/gold-bitrix.png"
+              alt="Статуэтка золотого битрикса"
+              class="certificates__image"
+            />
+            <figcaption class="certificates__description">
+              Сертификат
+            </figcaption>
+          </figure>
+          <h3 class="certificates__title">
+            Золотой сертифицированный партнер битрикс
+          </h3>
+          <div class="certificates__swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./images/phone/certificate.png"
+                  alt="Сертификат Золотой сертифицированный партнер 1С-Битрикс"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/phone/certificate.png"
+                  alt="Сертификат Золотой сертифицированный партнер 1С-Битрикс 2"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="business-research">
+        <h3 class="business-research__title title">
+          Исследуем <span class="accent-text">бизнес</span>
+        </h3>
+        <article class="business-research__paragraphs">
+          <p class="business-research__paragraph">
+            Каждый клиент&nbsp;&mdash; своя история. Мы&nbsp;не&nbsp;берем
+            шаблонные решения, а&nbsp;исследуем рынок конкретно под ваши цели
+            и&nbsp;задачи.
+          </p>
+          <p class="business-research__paragraph">
+            Сделать интернет-магазин с&nbsp;нуля непросто. Нужен сайт
+            с&nbsp;качественной разработкой дизайна, который не&nbsp;будет
+            отвлекать от&nbsp;сути, наполнением и&nbsp;рабочими модулями. Кроме
+            этого, для успешного запуска электронной торговой площадки владельцу
+            бизнеса требуется найти поставщиков, выбрать товарные позиции,
+            просчитать рентабельность, уладить другие организационные вопросы
+            вне сети.
+          </p>
+          <p class="business-research__paragraph">
+            Создание интернет-магазина лучше делегировать
+            на&nbsp;профессионалов. Мы&nbsp;возьмем на&nbsp;себя вопросы
+            по&nbsp;разработке интернет-магазина под ключ. Специалисты компании
+            предоставляют заказчику готовый продающий сайт. Он&nbsp;уже наполнен
+            контентом, ориентирован на&nbsp;конечного потребителя
+            и&nbsp;интуитивно понятен для заказчика.
+          </p>
+        </article>
+        <img
+          src="./images/phone/icons.svg"
+          alt="Маленькие картинки: человек с ноутбуком, портфель, песочные часы, записка и карандаш, лупа, график."
+          class="business-research__image"
+        />
+      </section>
+      <section class="stages">
+        <h2 class="stages__title title">Этапы</h2>
+        <ol class="stages__list">
+          <li class="stages__item">
+            <h3 class="stages__item-title">Маркетинговый анализ бизнеса</h3>
+            <p class="stages__paragraph">
+              На&nbsp;предварительном этапе мы&nbsp;выясняем специфику вашего
+              бизнеса, товаров. Отмечаем ваши преимущества и&nbsp;уникальные
+              предложения, изучаем ожидания и&nbsp;потребности целевой
+              аудитории, рассматриваем ближайшее конкурентное окружение.
+            </p>
+            <p class="stages__paragraph">
+              На&nbsp;основании полученных данных мы&nbsp;разрабатываем прототип
+              интернет-магазина, пишем техническое&nbsp;ТЗ для специалистов,
+              готовим рекомендации по&nbsp;текстовому наполнению с&nbsp;учетом
+              требований SEO, разрабатываем план по&nbsp;внешней
+              и&nbsp;внутренней оптимизации сайта. Также мы&nbsp;создаем набор
+              готовых элементов для пользовательского интерфейса.
+            </p>
+            <img
+              src="./images/phone/img1.svg"
+              alt="Схематичное изображение раскладки блоков на сайте"
+              class="stages__image"
+            />
+          </li>
+          <li class="stages__item">
+            <h3 class="stages__item-title">Привлекательный дизайн</h3>
+            <p class="stages__paragraph">
+              Интерфейс сайта будет соответствовать современным требованиям
+              и&nbsp;отвечать ожиданиям целевой аудитории. Опытные специалисты
+              Millenium создадут UX-дизайн, отталкиваясь от&nbsp;данных анализа
+              пользовательского поведения, что позволит в&nbsp;несколько раз
+              увеличить конверсию.
+            </p>
+            <p class="stages__paragraph">
+              Мы&nbsp;подберем оптимальные цветовые сочетания (основной,
+              дополнительные, акцентные цвета), уделим внимание четкости
+              графики, наглядности интерфейса, понятной и&nbsp;лаконичной
+              визуализации.
+            </p>
+            <img
+              src="./images/phone/preview-site.png"
+              alt="Скриншот из интернет-магазина"
+              class="stages__image"
+            />
+          </li>
+          <li class="stages__item">
+            <h3 class="stages__item-title">Профессиональная верстка</h3>
+            <p class="stages__paragraph">
+              Мы&nbsp;производим верстку по&nbsp;стандарту Pixel Perfect,
+              который предполагает точное соответствие сверстанных страниц
+              дизайн-макету. Наши специалисты напишут чистый код
+              с&nbsp;двухфакторной проверкой, позволяющий обеспечить высокую
+              скорость загрузки на&nbsp;любых браузерах и&nbsp;электронных
+              устройствах (десктопных и&nbsp;мобильных).
+            </p>
+            <p class="stages__paragraph">
+              Профессиональная адаптивная верстка является важным условием
+              бесперебойной надежной работы сайта на&nbsp;протяжении длительного
+              времени.
+            </p>
+            <img
+              src="./images/phone/screenshot-code.png"
+              alt="Скриншот части кода"
+              class="stages__image"
+            />
+          </li>
+          <li class="stages__item">
+            <h3 class="stages__item-title">
+              &laquo;Посадка&raquo; на&nbsp;CMS
+            </h3>
+            <p class="stages__paragraph">
+              Невозможно представить интернет-магазин без системы управления
+              сайтом. Специалисты Millenium выполнят посадку готовой верстки
+              вашего магазина на&nbsp;CMS &#8470;&nbsp;1&nbsp;в странах
+              СНГ&nbsp;&mdash; 1с&nbsp;Битрикс.
+            </p>
+            <p class="stages__paragraph">
+              Благодаря CMS, вы&nbsp;просто заходите в&nbsp;административную
+              панель, и, при помощи понятных полей, легко управляете
+              содержимым&nbsp;&mdash; редактируете новости, вносите коррективы
+              в&nbsp;товары, добавляет фото и&nbsp;видеоконтент, модерируете
+              и&nbsp;выполняете множество других действий, которые без CMS
+              были&nbsp;бы сущим кошмаром.
+            </p>
+            <img src="" alt="" class="stages__image" />
+          </li>
+          <li class="stages__item">
+            <h3 class="stages__item-title">Тестирование и доработка</h3>
+            <p class="stages__paragraph">
+              Чтобы избежать проблем во&nbsp;время использования сайта,
+              на&nbsp;данном этапе мы&nbsp;отрабатываем все возможные сценарии
+              взаимодействия пользователей с&nbsp;сайтом. Это позволяет вовремя
+              выявить ошибки и&nbsp;устранить&nbsp;их. Мы&nbsp;тестируем
+              usability и&nbsp;безопасность сайта, проверяем скорость загрузки
+              страниц, работу форм обратной связи и&nbsp;интерактивных
+              элементов, отображение страниц на&nbsp;разных устройствах. Это
+              позволяет на&nbsp;100% гарантировать функциональность ресурса.
+            </p>
+          </li>
+          <li class="stages__item">
+            <h3 class="stages__item-title">Запуск сайта</h3>
+            <p class="stages__paragraph">
+              Когда все проверено и&nbsp;выполнены все нужные доработки,
+              остается лишь выполнить грамотный запуск сайта. Наши специалисты
+              сверяют всё по&nbsp;чек-листу, чтобы избежать неприятностей
+              и&nbsp;получить на&nbsp;выходе идеальный интернет-магазин
+              с&nbsp;высокой конверсией. Сайт от&nbsp;профессионалов Millenium
+              позволит вам легко привлекать новых клиентов и&nbsp;станет
+              достойным лицом вашей компании в&nbsp;интернете.
+            </p>
+            <p class="stages__paragraph"></p>
+            <img src="" alt="" class="stages__image" />
+          </li>
+        </ol>
       </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

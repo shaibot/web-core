@@ -4,19 +4,15 @@ let swiper;
 
 const sliderInit = () => {
   swiper = new Swiper(slider, {
-    // Optional parameters
     direction: 'horizontal',
-    loop: false,
+    loop: true,
     centeredSlides: true,
-    spaceBetween: 5,
-    slidesPerView: 1,
-    effect: 'slide',
+    spaceBetween: 50,
+    slidesPerView: 'auto',
 
-
-    // If we need pagination
     pagination: {
       el: '.swiper-pagination',
-      clickable: true, // Делает пагинацию кликабельной
+      clickable: true,
     },
   });
 };
@@ -79,7 +75,7 @@ function toggleBtnArrow() {
 }
 
 function toggleSwiper() {
-  if (window.innerWidth <= 360) {
+  if (window.innerWidth <= 826) {
     if (!swiper) {
       sliderInit();
     }

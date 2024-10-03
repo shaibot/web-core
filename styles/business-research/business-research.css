@@ -1,0 +1,50 @@
+.business-research {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.business-research__title {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.business-research__paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.business-research__paragraph {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0;
+  text-align: left;
+  margin: 0;
+}
+
+@media (min-width: 600px) {
+  .business-research {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'title image'
+      'paragraph image'
+      'paragraph image';
+  }
+
+  .business-research__title {
+    grid-area: title;
+  }
+
+  .business-research__paragraphs {
+    grid-area: paragraph;
+  }
+  .business-research__image {
+    grid-area: image;
+    align-self: center;
+  }
+}
