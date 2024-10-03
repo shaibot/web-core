@@ -2,12 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 39px;
   margin-bottom: 50px;
 }
 
 .you-get__title {
-  margin-bottom: 37px;
   align-self: start;
+  margin: 0;
 }
 
 .you-get__container {
@@ -44,10 +45,6 @@
   line-height: 15px;
   letter-spacing: 0;
   padding-left: 4px;
-}
-
-.you-get__btn-cost {
-  margin-top: 50px;
 }
 
 @media (min-width: 760px) {
