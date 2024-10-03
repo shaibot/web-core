@@ -6,6 +6,13 @@
     gap: 30px;
 }
 
+.about__description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .about__title {
     font-size: 18px;
     font-weight: 700;
@@ -33,11 +40,12 @@
 
 .about__info {
     width: calc(100% - 15px);
-    margin-bottom: 20px;
+    margin-top: 0;
     font-size: 12px;
     font-weight: 400;
     line-height: 15px;
     align-self: flex-start;
+    margin-bottom: 0;
 }
 
 .about__order {
@@ -101,31 +109,33 @@
 @media (min-width: 1200px) {
     .about {
         padding-top: 26px;
+        gap: 116px;
+        overflow: visible;
     }
 
     .about__title {
         font-size: 36px;
         font-weight: 700;
         line-height: 44px;
-        margin-bottom: 33px;
     }
 
     .about__image {
-        width: 608px;
+        width: 738px;
         top: 172px;
         left: 75%;
         height: 500px;
     }
 
+
     .about__info {
         max-width: 619px;
-        margin-bottom: 116px;
         margin-top: 0;
     }
 
-    .about__button {
-        margin-bottom: 20px;
-    }
+.about__order {
+    align-items: start;
+    gap: 20px;
+}
 
     .about__bonus {
         font-size: 14px;
