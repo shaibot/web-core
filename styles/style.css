@@ -64,4 +64,8 @@ ul {
   letter-spacing: 0;
   text-align: left;
 }
+
+.accent-text-form {
+  color:rgb(155, 143, 255);
+}
 /* * {outline: 1px solid red;} */
