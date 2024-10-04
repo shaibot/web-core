@@ -37,6 +37,8 @@ object-position: center; */
   background: rgb(244, 248, 255);
   padding-top: 40px;
   padding-bottom: 152px;
+  padding-right: 13px;
+  padding-left: 13px;
 }
 
 .millenium-company__title {
@@ -55,4 +57,105 @@ object-position: center; */
   letter-spacing: 0;
   text-align: center;
   margin: 0 auto;
+}
+
+.millenium-company__form-container {
+  padding: 37px 15px 40px;
+  border-radius: 20px;
+  background: rgb(107, 90, 249);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 21px;
+}
+
+.millenium-company__form-title {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 250px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-align: center;
+  color: var(--button-text-color);
+}
+
+.millenium-company__form-description {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.millenium-company__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  padding-top: 14px;
+}
+
+.millenium-company__form-input {
+    width: 100%;
+    border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  background-color: inherit;
+  padding-bottom: 6px;
+}
+
+.millenium-company__form-input::placeholder {
+    color: rgba(255, 255, 255);
+    opacity: 0.4;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.millenium-company__form-input-checkbox {
+    position: absolute;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.millenium-company__checkbox {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    border: none;
+    border-radius: 2px;
+background: rgb(155, 143, 255);
+margin-left: -1.7em;
+background-position: center;
+background-repeat: no-repeat;
+background-size: 60% 60%;
+padding: 4px 3px;
+}
+
+.millenium-company__form-label {
+    padding-left: 2em;
+}
+
+.millenium-company__form-input-checkbox:checked + .millenium-company__checkbox {
+    background-image: url(../../images/phone/checked.svg);
+}
+
+.millenium-company__form-button {
+    color: rgb(107, 90, 249);
+    font-size: 14px;
+font-weight: 700;
+line-height: 17px;
+letter-spacing: 0;
+    border: none;
+    width: 268px;
+    height: 60px;
+    border-radius: 5px;
+background: rgb(255, 255, 255);
 }
