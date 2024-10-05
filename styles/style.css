@@ -38,6 +38,10 @@ ul {
   margin: 0;
 }
 
+address {
+  font-style: normal;
+}
+
 .accent-text {
   color: var(--accent-color);
 }
@@ -68,4 +72,11 @@ ul {
 .accent-text-form {
   color:rgb(155, 143, 255);
 }
-* {outline: 1px solid red;}
+
+.footer-text {
+  font-size: 18px;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0;
+}
+/* * {outline: 1px solid red;} */

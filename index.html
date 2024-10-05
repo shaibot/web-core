@@ -32,6 +32,7 @@
       rel="stylesheet"
       href="./styles/millenium-company/millenium-company.css"
     />
+    <link rel="stylesheet" href="./styles/footer/footer.css" />
   </head>
   <body class="body">
     <header class="header">
@@ -536,21 +537,22 @@
       <section class="millenium-company">
         <!-- <div class="millenium-company__image"></div> -->
         <div class="millenium-company__container">
-          <div class="millenium-company__container-description"><h3 class="millenium-company__title">Компания Millenium-</h3>
-          <p class="millenium-company__description">
-            Это дорогая и&nbsp;долгая разработка интернет-магазинов
-            на&nbsp;1С&nbsp;Битрикс! Нельзя сделать <b>качественный</b> цифровой
-            продукт за&nbsp;дешево и&nbsp;быстро!
-          </p>
-          <p class="millenium-company__description">
-            Мы&nbsp;создадим интернет-магазин с&nbsp;нуля. Заказчику
-            не&nbsp;придется искать других IT-специалистов для дальнейшей
-            настройки и&nbsp;запуска сайта. Мы&nbsp;настроим сервисы,
-            интегрируем модули для онлайн-торговли, добавим контент
-            и&nbsp;товары. Работы по&nbsp;созданию интернет-магазина с&nbsp;нуля
-            ведутся только после анализа ниши бизнеса.
-          </p>
-        </div>
+          <div class="millenium-company__container-description">
+            <h3 class="millenium-company__title">Компания Millenium-</h3>
+            <p class="millenium-company__description">
+              Это дорогая и&nbsp;долгая разработка интернет-магазинов
+              на&nbsp;1С&nbsp;Битрикс! Нельзя сделать
+              <b>качественный</b> цифровой продукт за&nbsp;дешево и&nbsp;быстро!
+            </p>
+            <p class="millenium-company__description">
+              Мы&nbsp;создадим интернет-магазин с&nbsp;нуля. Заказчику
+              не&nbsp;придется искать других IT-специалистов для дальнейшей
+              настройки и&nbsp;запуска сайта. Мы&nbsp;настроим сервисы,
+              интегрируем модули для онлайн-торговли, добавим контент
+              и&nbsp;товары. Работы по&nbsp;созданию интернет-магазина
+              с&nbsp;нуля ведутся только после анализа ниши бизнеса.
+            </p>
+          </div>
           <article class="millenium-company__form-container">
             <h3 class="millenium-company__form-title">
               Звоните нам по&nbsp;телефону
@@ -579,18 +581,73 @@
                 Перезвоните мне
               </button>
               <label class="millenium-company__form-label" for="checkbox"
-                ><input checked
+                ><input
+                  checked
                   id="checkbox"
                   name="checkbox"
                   type="checkbox"
                   class="millenium-company__form-input-checkbox"
-                /><span class="millenium-company__checkbox"></span><span class="accent-text-form">Cогласен/а на</span> обработку персональных данных</label
+                /><span class="millenium-company__checkbox"></span
+                ><span class="accent-text-form">Cогласен/а на</span> обработку
+                персональных данных</label
               >
             </form>
           </article>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer__contacts">
+        <address class="footer__contact-mail">
+          <p class="footer__text">Напишите нам</p>
+          <a href="mailto:info@millenium.ru" class="footer__contacts-link"
+            >info@millenium.ru</a
+          >
+        </address>
+        <button class="footer__button button-find-cost">Заказать звонок</button>
+      </div>
+      <div class="footer__container">
+        <address class="footer__contacts-items">
+          <a href="tel:+77778889900" class="footer__icon">
+            <img src="./images/phone/telegram.svg" alt="Ссылка на телеграм" />
+          </a>
+          <a href="tel:+77778889900" class="footer__icon"
+            ><img src="./images/phone/whatsapp.svg" alt="Ссылка на вотсап"
+          /></a>
+        </address>
+        <address class="footer__contacts-address">
+          <p href="" class="footer__address">
+            Москва, ул. Профсоюзная&nbsp;76, БЦ&nbsp;&laquo;ГАЛЕРЕЯ 76&raquo;
+            2&nbsp;этаж
+          </p>
+          <div class="footer__shedule-container">
+            <a href="tel:+77778889900" class="footer__phone-number footer-text"
+              >+ 7 (495) 555 65&nbsp;65</a
+            >
+            <p class="footer__shedule footer-text">
+              пн-пт
+              <time datetime="10:00" class="footer__time">10:00</time>-<time
+                datetime="19:00"
+                class="footer__time"
+                >19:00</time
+              >
+            </p>
+          </div>
+        </address>
+      </div>
+      <img
+        class="footer__logo"
+        src="./images/phone/logo-footer.svg"
+        alt="Логотип компании Миллениум в виде надписи Миллениум английскими буквами."
+      />
+      <p class="footer__copyright">
+        &copy;&nbsp;2018&ndash;2021&nbsp;| Millenium&nbsp;&mdash; создание
+        интернет-магазинов на&nbsp;1С&nbsp;Битрикс
+      </p>
+      <a href="#" class="footer__confidential footer__copyright"
+        >Политика конфиденциальности</a
+      >
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
   </body>
