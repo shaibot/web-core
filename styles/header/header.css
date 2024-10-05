@@ -119,7 +119,7 @@
   cursor: pointer;
 }
 
-.header__contacts-link {
+.header__btn-tel {background-color: inherit;
   background-image: url(../../images/phone/phone.svg);
   width: 100%;
   background-repeat: no-repeat;
@@ -128,6 +128,8 @@
   display: inline-block;
   max-width: 16.76px;
   margin: 0 auto;
+  border: none;
+  cursor: pointer;
 }
 
 .header__link {

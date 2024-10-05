@@ -16,6 +16,7 @@ const sliderInit = () => {
     },
   });
 };
+
 const btnArrow = document.querySelector('.site-properties__btn-arrow');
 const sitePropertiesItems = document.querySelector('.site-properties__items');
 const sitePropertiesList = sitePropertiesItems.querySelector(
@@ -24,6 +25,15 @@ const sitePropertiesList = sitePropertiesItems.querySelector(
 const menuBurger = document.querySelector('.menu');
 const btnBurger = document.querySelector('.header__menu-mobile-btn');
 const btnMenuClosed = document.querySelector('.menu__button-close');
+
+const formContainer = document.querySelector('.form');
+const formBtnClose = formContainer.querySelector('.form__btn-close');
+const formApplying = formContainer.getElementById('form-applying');
+
+function handleFormSubmit (e) {
+  e.preventDefault();
+  console.log('Отправка из формы')
+}
 
 function preventDefault(e) {
   e.preventDefault();
@@ -99,3 +109,6 @@ menuBurger.addEventListener('click', function (evt) {
     closeMenu();
   }
 });
+
+// Слушатели для формы
+formApplying.addEventListener('submit', handleFormSubmit);
