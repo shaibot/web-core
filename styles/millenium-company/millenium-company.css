@@ -21,9 +21,9 @@
 }
 
 .millenium-company__image {
-  width: 100%;
+  width: 100%;position: absolute;
   min-height: 251px;
-  background-image: url(../../images/phone/office.png);
+  overflow: visible;background-image: url(../../images/phone/office.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

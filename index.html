@@ -33,6 +33,7 @@
       href="./styles/millenium-company/millenium-company.css"
     />
     <link rel="stylesheet" href="./styles/footer/footer.css" />
+    <link rel="stylesheet" href="./styles/form/form.css" />
   </head>
   <body class="body">
     <header class="header">
@@ -83,6 +84,44 @@
         <button class="header__button">Заказать звонок</button>
       </div>
     </header>
+    <aside class="form">
+      <div class="form__container">
+        <button class="form__btn-close"></button>
+        <h3 class="form__title">Заявка на&nbsp;консультацию</h3>
+        <form
+          id="form-applying"
+          action="#"
+          class="form__applying"
+          method="post"
+        >
+          <lable class="form__field">
+            Ваше имя
+            <input
+              type="text"
+              class="form__input"
+              name="name"
+              placeholder="Введите ваше имя"
+              required
+            />
+          </lable>
+          <lable class="form__field"
+            >Номер телефона
+            <input
+              type="tel"
+              class="form__input"
+              name="tel"
+              placeholder="+ 7 (999) 999 99 99"
+              required
+            />
+          </lable>
+          <button type="submit" class="form__button button-find-cost">
+            Отправить
+          </button>
+        </form>
+        <p class="form__accept">Нажимая на&nbsp;кнопку &laquo;Отправить заявку&raquo;, я&nbsp;даю согласие на&nbsp;обработку персональных данных и&nbsp;соглашаюсь c&nbsp;политикой конфиденциальности</p>
+      <img src="./images/phone/magazine.svg" alt="Простое изображение раскрытой книги с записями в ней на фиолетовом фоне" class="form__icon">
+      </div>
+    </aside>
     <aside class="menu">
       <nav class="menu__container">
         <button class="menu__button-close"></button>
@@ -535,7 +574,7 @@
         </ol>
       </section>
       <section class="millenium-company">
-        <!-- <div class="millenium-company__image"></div> -->
+        <div class="millenium-company__image"></div>
         <div class="millenium-company__container">
           <div class="millenium-company__container-description">
             <h3 class="millenium-company__title">Компания Millenium-</h3>
