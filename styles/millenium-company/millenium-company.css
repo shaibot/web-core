@@ -1,5 +1,5 @@
 .millenium-company {
-    position: relative;
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -8,13 +8,16 @@
 }
 
 .millenium-company::after {
-    content: "";
+  content: '';
   background-image: url(../../images/phone/hand.svg);
-  width: 221px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 221px;
   height: 113px;
   position: absolute;
   bottom: 26px;
   left: 0;
+  width: 100%;
 }
 
 .millenium-company__image {
@@ -27,7 +30,8 @@
 }
 
 .millenium-company__container {
-    position: relative;
+    width: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,26 +45,34 @@
 }
 
 .millenium-company__container::before {
-    content: "";
-    position: absolute;
-    background-image: url(../../images/phone/decor1.svg);
-    width: 119px;
-height: 119px;
-top: -7%;
-left: 0;
+  content: '';
+  position: absolute;
+  background-image: url(../../images/phone/decor1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 119px;
+  height: 119px;
+  top: -7%;
+  left: 0;
 }
 
 .millenium-company__container::after {
-    content: "";
-    position: absolute;
-    background-image: url(../../images/phone/decor-line.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 103px;
-height: 102px;
-top: -5%;
-right: -10%;
+  content: '';
+  position: absolute;
+  background-image: url(../../images/phone/decor-line.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 85px;
+  height: 102px;
+  top: -5%;
+  right: -3%;
+}
+
+.millenium-company__container-description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .millenium-company__title {
@@ -69,7 +81,7 @@ right: -10%;
   line-height: 29px;
   letter-spacing: 0;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 10px;
 }
 
 .millenium-company__description {
@@ -82,7 +94,7 @@ right: -10%;
 }
 
 .millenium-company__form-container {
-    position: relative;
+  position: relative;
   padding: 37px 15px 40px;
   border-radius: 20px;
   background: rgb(107, 90, 249);
@@ -94,16 +106,16 @@ right: -10%;
 }
 
 .millenium-company__form-container::after {
-    content: "";
-    position: absolute;
-    background-image: url(../../images/phone/cube.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 91px;
-height: 91px;
-bottom: -13%;
-right: -8%;
+  content: '';
+  position: absolute;
+  background-image: url(../../images/phone/cube.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 91px;
+  height: 91px;
+  bottom: -13%;
+  right: -4%;
 }
 
 .millenium-company__form-title {
@@ -130,6 +142,7 @@ right: -8%;
 }
 
 .millenium-company__form {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -177,6 +190,7 @@ right: -8%;
 }
 
 .millenium-company__form-label {
+  width: 100%;
   padding-left: 2em;
   font-size: 12.5px;
   font-weight: 400;
@@ -190,34 +204,118 @@ right: -8%;
 }
 
 .millenium-company__form-button {
-    position: relative;
+  position: relative;
   color: rgb(107, 90, 249);
   font-size: 14px;
   font-weight: 700;
   line-height: 17px;
   letter-spacing: 0;
   border: none;
-  width: 268px;
+  width: 100%;
   height: 60px;
   border-radius: 5px;
   background: rgb(255, 255, 255);
 }
 
 .millenium-company__form-button::after {
-    content: "";
-    position: absolute;
-    background-image: url(../../images/phone/donat.svg);
-    width: 42px;
-height: 41px;
-bottom: -34%;
-    left: -6%;
+  content: '';
+  position: absolute;
+  background-image: url(../../images/phone/donat.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  max-width: 42px;
+  height: 41px;
+  bottom: -34%;
+  left: -6%;
 }
 
-@media (min-width: 700px) {
-    .millenium-company__container::after {
-        top: 43%;
-        right: 0%;
-        width: 174px;
-        height: 173px;
+@media (min-width: 740px) {
+  .millenium-company__container {
+    padding-bottom: 223px;
+  }
+
+  .millenium-company__container::after {
+    top: 43%;
+    right: 0%;
+    max-width: 174px;
+    height: 173px;
+  }
+
+  .millenium-company__description {
+    max-width: 620px;
+  }
+
+  .millenium-company__form-title {
+    font-size: 24px;
+    line-height: 29px;
+    max-width: 340px;
+  }
+
+  .millenium-company__form-container {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  .millenium-company__form-container::after {
+    max-width: 119px;
+    height: 119px;
+    bottom: -38%;
+    right: -21%;
+  }
+
+  .millenium-company__form-button::after {
+    bottom: -143%;
+    left: -69%;
+  }
+
+  .millenium-company::after {
+    width: 335px;
+    height: 171px;
+  }
+}
+
+@media (min-width: 1200px) {
+    .millenium-company__container {
+    flex-direction: row;
+    padding: 6% 8% 17%;
+    justify-content: space-between;
+    align-items: start;
     }
+    .millenium-company__container-description {
+        align-items: start;
+    }
+
+ .millenium-company__title {
+    max-width: 205px;
+    font-size: 36px;
+font-weight: 800;
+line-height: 44px;
+margin: 0 0 10px;
+ }
+
+ .millenium-company__description {
+    max-width: 448px;
+    font-size: 18px;
+line-height: 22px;
+text-align: start;
+ }
+
+ .millenium-company::after {
+    max-width: 430px;
+    height: 219px;
+    bottom: -4%;
+ }
+
+.millenium-company__form-container::after {
+    bottom: -49%;
+        right: -18%;
+}
+
+ .millenium-company__form-button::after {
+    max-width: 58px;
+height: 57px;
+bottom: -246%;
+        left: -36%;
+ }
 }
