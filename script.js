@@ -43,14 +43,13 @@ const sitePropertiesList = sitePropertiesItems.querySelector(
 );
 const menuBurger = document.querySelector('.menu');
 const btnBurger = document.querySelector('.header__menu-mobile-btn');
-const btnMenuClosed = document.querySelector('.menu__button-close');
+const btnMenuClose = document.querySelector('.menu__button-close');
 
 const formContainer = document.querySelector('.form-apply-order');
 const formBtnClose = formContainer.querySelector('.form__btn-close');
 const formApplying = formContainer.querySelector('form-applying');
 const btnFormOpen = document.querySelector('.btn-open-form');
 const btnFormClose = formContainer.querySelector('.form__btn-close');
-
 
 function preventDefault(e) {
   e.preventDefault();
@@ -89,21 +88,23 @@ function openMenu() {
   btnBurger.classList.remove('header__menu-mobile-btn--no-active');
   btnBurger.classList.add('header__menu-mobile-btn--active');
   menuBurger.classList.add('menu--opened');
+  disableScroll();
 }
 
 function closeMenu() {
   btnBurger.classList.remove('header__menu-mobile-btn--active');
   btnBurger.classList.add('header__menu-mobile-btn--no-active');
   menuBurger.classList.remove('menu--opened');
+  enableScroll();
 }
 
 function toggleBtnBurger() {
   if (btnBurger.classList.contains('header__menu-mobile-btn--no-active')) {
     openMenu();
-    disableScroll();
+    
   } else {
     closeMenu();
-    enableScroll();
+    
   }
 }
 
@@ -140,7 +141,7 @@ toggleSwiper();
 
 window.addEventListener('resize', toggleSwiper);
 btnBurger.addEventListener('click', toggleBtnBurger);
-btnMenuClosed.addEventListener('click',closeMenu);
+btnMenuClose.addEventListener('click',closeMenu);
 btnArrow.addEventListener('click', toggleBtnArrow);
 menuBurger.addEventListener('click', function (evt) {
   console.log(evt.target);
