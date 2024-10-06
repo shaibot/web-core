@@ -21,16 +21,19 @@
 }
 
 .millenium-company__image {
-  width: 100%;position: absolute;
+  max-width: 100vw;
+  width: calc(100% + 30px); /* Занимает ширину родителя плюс отступы */
+  margin-left: -15px; /* Половина отступа для центровки */
+  margin-right: -15px; /* Половина отступа для центровки */
+  position: relative;
   min-height: 251px;
-  overflow: visible;background-image: url(../../images/phone/office.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    object-fit: cover;
+    object-position: center;
 }
 
 .millenium-company__container {
-    width: 100%;
+  width: 100%;
+  max-width: 1160px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -66,13 +69,13 @@
   width: 85px;
   height: 102px;
   top: -5%;
-  right: -3%;
+  right: 0;
 }
 
 .millenium-company__container-description {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .millenium-company__title {
@@ -230,6 +233,13 @@
   left: -6%;
 }
 
+@media (min-width: 622px) {
+  .millenium-company__image {
+  background-image: url(../../images/desktop/office-descktop.png);
+  /* max-width: 1440px; */
+  }
+}
+
 @media (min-width: 740px) {
   .millenium-company__container {
     padding-bottom: 223px;
@@ -275,47 +285,56 @@
   }
 }
 
+@media (min-width: 1100px) {
+  .millenium-company__image {
+    width: calc(100% + 250px); /* Занимает ширину родителя плюс отступы */
+  margin-left: -125px; /* Половина отступа для центровки */
+  margin-right: -125px; /* Половина отступа для центровки */
+  }
+  
+}
+
 @media (min-width: 1200px) {
-    .millenium-company__container {
+  .millenium-company__container {
     flex-direction: row;
     padding: 6% 8% 17%;
     justify-content: space-between;
     align-items: start;
-    }
-    .millenium-company__container-description {
-        align-items: start;
-    }
+  }
+  .millenium-company__container-description {
+    align-items: start;
+  }
 
- .millenium-company__title {
+  .millenium-company__title {
     max-width: 205px;
     font-size: 36px;
-font-weight: 800;
-line-height: 44px;
-margin: 0 0 10px;
- }
+    font-weight: 800;
+    line-height: 44px;
+    margin: 0 0 10px;
+  }
 
- .millenium-company__description {
+  .millenium-company__description {
     max-width: 448px;
     font-size: 18px;
-line-height: 22px;
-text-align: start;
- }
+    line-height: 22px;
+    text-align: start;
+  }
 
- .millenium-company::after {
+  .millenium-company::after {
     max-width: 430px;
     height: 219px;
     bottom: -4%;
- }
+  }
 
-.millenium-company__form-container::after {
+  .millenium-company__form-container::after {
     bottom: -49%;
-        right: -18%;
-}
+    right: -18%;
+  }
 
- .millenium-company__form-button::after {
+  .millenium-company__form-button::after {
     max-width: 58px;
-height: 57px;
-bottom: -246%;
-        left: -36%;
- }
+    height: 57px;
+    bottom: -246%;
+    left: -36%;
+  }
 }
