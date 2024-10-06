@@ -8,7 +8,7 @@
     padding-bottom: 150px;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1300px) {
     .content {
         max-width: calc(100% - 250px);
         gap: 150px;
