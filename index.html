@@ -37,7 +37,8 @@
     <link rel="stylesheet" href="./styles/form/form.css" />
   </head>
   <body class="body">
-    <header class="header">
+    <a href="#top" class="jump-up" title="Переместиться к началу"><img src="./images/desktop/arrow-up.svg" class="jump-up__img" /></a>
+    <header id="main" class="header">
       <button
         class="header__menu-mobile-btn header__menu-mobile-btn--no-active"
       ></button>
@@ -141,27 +142,27 @@
         <button class="menu__button-close"></button>
         <ul class="menu-list">
           <li class="menu-list__item">
-            <a href="#" class="menu__link">Главная</a>
+            <a href="#main" class="menu__link">Главная</a>
           </li>
           <li class="menu-list__item">
-            <a href="#" class="menu__link"
+            <a href="#shops" class="menu__link"
               >Интернет-магазины, которые продают</a
             >
           </li>
           <li class="menu-list__item">
-            <a href="#" class="menu__link">Что вы&nbsp;получаете</a>
+            <a href="#you-get" class="menu__link">Что вы&nbsp;получаете</a>
           </li>
           <li class="menu-list__item">
-            <a href="#" class="menu__link">Контакты</a>
+            <a href="#contacts" class="menu__link">Контакты</a>
           </li>
           <li class="menu-list__item">
-            <a href="#" class="menu__link">Исследуем бизнес</a>
+            <a href="#business-research" class="menu__link">Исследуем бизнес</a>
           </li>
           <li class="menu-list__item">
-            <a href="#" class="menu__link">Этапы</a>
+            <a href="#stages" class="menu__link">Этапы</a>
           </li>
           <li class="menu-list__item">
-            <a href="#" class="menu__link">Обратная связь</a>
+            <a href="#feedback" class="menu__link">Обратная связь</a>
           </li>
         </ul>
         <div class="menu__container-contacts">
@@ -223,7 +224,7 @@
           </p>
         </div>
       </section>
-      <section class="site-properties">
+      <section id="shops" class="site-properties">
         <h2 class="site-properties__title">
           Мы&nbsp;создаем интернет-магазины,
           <span class="accent-text">которые продают</span>
@@ -289,7 +290,7 @@
           Узнать стоимость
         </button>
       </section>
-      <section class="you-get">
+      <section id="you-get" class="you-get">
         <h2 class="you-get__title title">
           Что вы&nbsp;<span class="accent-text">получаете ?</span>
         </h2>
@@ -445,7 +446,7 @@
           </div>
         </div>
       </section>
-      <section class="business-research">
+      <section id="business-research" class="business-research">
         <h3 class="business-research__title title">
           Исследуем <span class="accent-text">бизнес</span>
         </h3>
@@ -479,7 +480,7 @@
           class="business-research__image"
         />
       </section>
-      <section class="stages">
+      <section id="stages" class="stages">
         <h2 class="stages__title title">Этапы</h2>
         <ol class="stages__list">
           <li class="stages__item">
@@ -621,7 +622,7 @@
               с&nbsp;нуля ведутся только после анализа ниши бизнеса.
             </p>
           </div>
-          <article class="millenium-company__form-container">
+          <article id="feedback" class="millenium-company__form-container">
             <h3 class="millenium-company__form-title">
               Звоните нам по&nbsp;телефону
               <a href="tel:+74957926669" class="millenium-company__form-tel"
@@ -664,7 +665,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer id="contacts" class="footer">
       <div class="footer__contacts">
         <address class="footer__contact-mail">
           <p class="footer__text">Напишите нам</p>

@@ -20,12 +20,10 @@
 }
 
 .header__menu-mobile-btn--no-active {
-  transform: rotate(360deg);
   background-image: url(../../images/phone/menu.svg);
 }
 
 .header__menu-mobile-btn--active {
-  transform: rotate(-360deg);
   background-image: url(../../images/phone/menu-active.svg);
 }
 
@@ -54,8 +52,9 @@
   text-decoration: none;
 }
 
-.header__btn-tel {background-color: inherit;
-  
+.header__btn-tel {
+  background-color: inherit;
+
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -90,7 +89,8 @@
   grid-template-rows: 36px 24px;
   row-gap: 0px;
   column-gap: 20px;
-  grid-template-areas: 'phone button'
+  grid-template-areas:
+    'phone button'
     'shedule button';
 }
 
@@ -128,7 +128,7 @@
   height: 60px;
   border: none;
   border-radius: 5px;
-  background:  var(--button-background-color);
+  background: var(--button-background-color);
   color: var(--button-text-color);
   font-size: 12px;
   font-weight: 800;

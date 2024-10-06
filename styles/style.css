@@ -78,4 +78,22 @@ font-weight: 700;
 line-height: 22px;
 letter-spacing: 0;
 }
+
+.jump-up {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid var(--accent-color);
+  box-shadow: 0 0 3px 3px white;
+  background-color: white;
+  position: fixed;
+  right: 20px;
+  top: 90vh;
+  z-index: 2;
+}
+
+* {
+  scroll-margin: 20px;
+}
 /* * {outline: 1px solid red;} */

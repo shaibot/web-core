@@ -143,7 +143,8 @@ btnBurger.addEventListener('click', toggleBtnBurger);
 btnMenuClosed.addEventListener('click',closeMenu);
 btnArrow.addEventListener('click', toggleBtnArrow);
 menuBurger.addEventListener('click', function (evt) {
-  if (evt.target.classList.contains('menu--opened')) {
+  console.log(evt.target);
+  if (evt.target.classList.contains('menu--opened') || evt.target.classList.contains('menu__link')) {
     closeMenu();
   }
 });
