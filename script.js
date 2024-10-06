@@ -26,14 +26,12 @@ const menuBurger = document.querySelector('.menu');
 const btnBurger = document.querySelector('.header__menu-mobile-btn');
 const btnMenuClosed = document.querySelector('.menu__button-close');
 
-const formContainer = document.querySelector('.form');
+const formContainer = document.querySelector('.form-apply-order');
 const formBtnClose = formContainer.querySelector('.form__btn-close');
-const formApplying = formContainer.getElementById('form-applying');
+const formApplying = formContainer.querySelector('form-applying');
+const btnFormOpen = document.querySelector('.btn-open-form');
+const btnFormClose = formContainer.querySelector('.form__btn-close');
 
-function handleFormSubmit (e) {
-  e.preventDefault();
-  console.log('Отправка из формы')
-}
 
 function preventDefault(e) {
   e.preventDefault();
@@ -49,6 +47,24 @@ function enableScroll() {
   window.removeEventListener('wheel', preventDefault);
   window.removeEventListener('touchmove', preventDefault);
 }
+
+// открыть форму и закрыть форму
+
+function openFormApplay () {
+  formContainer.classList.add('form--active');
+  disableScroll();
+  }
+  
+  function closeFormApplay () {
+    formContainer.classList.remove('form--active');
+    enableScroll();
+  }
+
+  // функция для отключеня сабмита формы по дефолту
+  function handleFormSubmit (e) {
+    e.preventDefault();
+    console.log('Отправка из формы')
+  }
 
 function openMenu() {
   btnBurger.classList.remove('header__menu-mobile-btn--no-active');
@@ -104,11 +120,15 @@ btnBurger.addEventListener('click', toggleBtnBurger);
 btnMenuClosed.addEventListener('click',closeMenu);
 btnArrow.addEventListener('click', toggleBtnArrow);
 menuBurger.addEventListener('click', function (evt) {
-  console.log(evt.target);
   if (evt.target.classList.contains('menu--opened')) {
     closeMenu();
   }
 });
 
-// Слушатели для формы
-formApplying.addEventListener('submit', handleFormSubmit);
+btnFormOpen.addEventListener('click', openFormApplay);
+btnFormClose.addEventListener('click', closeFormApplay);
+formContainer.addEventListener('click', function (evt) {
+  if (evt.target.classList.contains('form--active')) {
+    closeFormApplay();
+  }
+});

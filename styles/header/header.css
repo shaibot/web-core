@@ -54,14 +54,32 @@
   text-decoration: none;
 }
 
-.header__contacts--mobile-viewport {
-  display: flex;
-  width: 52px;
-  background-color: var(--button-background-color);
-  border-radius: 5px;
+.header__btn-tel {background-color: inherit;
+  
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  display: inline-block;
+  max-width: 16.76px;
+}
+
+.header__contacts--mobile-viewport {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: none;
+  cursor: pointer;
+  width: 52px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: var(--button-background-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  object-fit: contain;
+  object-position: center;
 }
 
 .header__contacts--desktop-viewport {
@@ -116,19 +134,6 @@
   font-weight: 800;
   line-height: 15px;
   grid-area: button;
-  cursor: pointer;
-}
-
-.header__btn-tel {background-color: inherit;
-  background-image: url(../../images/phone/phone.svg);
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  display: inline-block;
-  max-width: 16.76px;
-  margin: 0 auto;
-  border: none;
   cursor: pointer;
 }
 
