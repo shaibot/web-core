@@ -1,0 +1,20 @@
+@media (min-width: 826px) {
+  .swiper {
+    z-index: 0;
+  }
+  .swiper-slide {
+    visibility: visible; /* Делаем слайды видимыми */
+    opacity: 1; /* Устраняем возможные проблемы с прозрачностью */
+    transform: translateX(0); /* Убираем любые трансформации */
+    pointer-events: auto; /* Позволяем взаимодействие с элементами */
+  }
+
+  .swiper-wrapper {
+    display: block; /* Делаем обертку обычным блочным элементом */
+    margin-bottom: 0;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+}

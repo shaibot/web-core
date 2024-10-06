@@ -11,16 +11,27 @@
   border-radius: 10px;
   border: 1px solid rgb(255, 255, 255);
   padding: 19px 14px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .certificates__gold-bitrix {
-  margin: 0 auto;
   width: 100%;
   max-width: 99px;
+  margin-bottom: 19px;
+}
+
+.certificates__slide-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
 }
 
 .certificates__image {
-  margin-bottom: 19px;
+  width: 100%;
+  min-height: 395px;
 }
 
 .certificates__description {
@@ -31,10 +42,12 @@
   letter-spacing: 0;
   text-align: center;
   margin-bottom: 6px;
+  margin-top: 0;
 }
 
 .certificates__title {
-  margin: 0 auto 24px;
+  margin-top: 0;
+  margin-bottom: 24px;
   width: 100%;
   max-width: 212px;
   font-size: 12px;
@@ -44,13 +57,98 @@
   text-align: center;
 }
 
+.certificates__swiper {
+  min-height: 390px;
+width: 100%;
+height: 100%;
+padding-bottom: 30px;
+}
+
+.certificates__swiper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media (min-width: 600px) {
   .certificates {
     padding: 26px 20px 32px;
     margin-bottom: 70px;
   }
 
-  .certificates__image {
+  .certificates__gold-bitrix {
+    max-width: 185px;
     margin-bottom: 43px;
   }
+
+  .certificates__image {
+    min-height: 607px;
+  }
+}
+
+@media (min-width: 826px) {
+  .certificates {
+    padding: 26px 20px;
+    margin-bottom: 0;
+  }
+
+  .certificates__container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10%;
+  }
+  
+  .certificates__gold-bitrix {
+    height: 100%;
+  width: 100%;
+  max-width: 266px;
+  margin-bottom: -36px;
+  flex-shrink: 0;
+  flex-basis: 35%;
+  }
+
+  .certificates__swiper {
+    min-height: 327px;
+  }
+
+  .certificates__swiper.swiper {
+    margin: 0;
+  }
+
+  .certificates__swiper .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 557px;
+    /* flex-grow: 1; */
+  }
+
+  .certificates__swiper .swiper-slide {
+    max-width: 200px;
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  .certificates__image {
+    min-height: 200px;
+}
+
+.certificates__title {
+  margin-bottom: 14px;}
+}
+
+@media (min-width: 1100px) {
+  .certificates__gold-bitrix {
+  max-width: 359px;
+  }
+
+  .certificates__image {
+    min-height: 327px;
+}
+
+.certificates__swiper .swiper-slide {
+  max-width: 231px;
+}
 }

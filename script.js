@@ -1,4 +1,4 @@
-const slider = document.querySelector('.swiper');
+const slider = document.querySelector('.site-properties__items');
 
 let swiper;
 
@@ -16,6 +16,25 @@ const sliderInit = () => {
     },
   });
 };
+
+//слайдер сертификатов
+const certificatesSlider = document.querySelector('.certificates__swiper');
+
+let swiperCertificates;
+
+const certificatesSliderInit = () => {
+  swiperCertificates = new Swiper(certificatesSlider, {
+    direction: 'horizontal',
+    centeredSlides: true,
+    spaceBetween: 50,
+    slidesPerView: 'auto',
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+}
 
 const btnArrow = document.querySelector('.site-properties__btn-arrow');
 const sitePropertiesItems = document.querySelector('.site-properties__items');
@@ -102,11 +121,14 @@ function toggleBtnArrow() {
 
 function toggleSwiper() {
   if (window.innerWidth <= 826) {
-    if (!swiper) {
+    if (!swiper || !swiperCertificates) {
       sliderInit();
+      certificatesSliderInit();
     }
   } else {
-    if (swiper) {
+    if (swiper || swiperCertificates) {
+      swiperCertificates.destroy(true, true);
+      swiperCertificates = null;
       swiper.destroy(true, true);
       swiper = null;
     }
@@ -114,6 +136,7 @@ function toggleSwiper() {
 }
 
 toggleSwiper();
+
 
 window.addEventListener('resize', toggleSwiper);
 btnBurger.addEventListener('click', toggleBtnBurger);

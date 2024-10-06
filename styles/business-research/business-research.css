@@ -12,9 +12,9 @@
 }
 
 .business-research__paragraphs {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .business-research__paragraph {
@@ -28,6 +28,7 @@
 
 @media (min-width: 600px) {
   .business-research {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
@@ -38,6 +39,9 @@
 
   .business-research__title {
     grid-area: title;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 0;
   }
 
   .business-research__paragraphs {
@@ -46,5 +50,21 @@
   .business-research__image {
     grid-area: image;
     align-self: center;
+  }
+}
+
+@media (min-width: 1100px) {
+  .business-research__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .business-research__paragraphs {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .business-research__image {
+    min-height: 500px;
   }
 }
