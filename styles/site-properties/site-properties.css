@@ -114,14 +114,14 @@
   background: rgb(181, 182, 188);
 }
 
-@media (min-width: 826px) {
+@media (min-width: 767px) {
   .site-properties__list {
     width: 100%;
     max-width: 1440px;
     height: 230px;
     overflow: hidden;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 373px));
+    grid-template-columns: repeat(2, minmax(340px, 373px));
     grid-template-rows: min-content;
     gap: 54px 20px;
     justify-content: center;
@@ -159,5 +159,11 @@
   .site-properties__items {
     display: flex;
     align-items: center;
+  }
+}
+
+@media (min-width: 1302px) {
+  .site-properties__list {
+    grid-template-columns: repeat(3, minmax(340px, 373px));
   }
 }

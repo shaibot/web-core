@@ -48,7 +48,7 @@ const btnMenuClose = document.querySelector('.menu__button-close');
 const formContainer = document.querySelector('.form-apply-order');
 const formBtnClose = formContainer.querySelector('.form__btn-close');
 const formApplying = formContainer.querySelector('form-applying');
-const btnFormOpen = document.querySelector('.btn-open-form');
+const btnFormOpen = document.querySelectorAll('.btn-open-form');
 const btnFormClose = formContainer.querySelector('.form__btn-close');
 
 function preventDefault(e) {
@@ -120,16 +120,26 @@ function toggleBtnArrow() {
   }
 }
 
-function toggleSwiper() {
-  if (window.innerWidth <= 826) {
-    if (!swiper || !swiperCertificates) {
-      sliderInit();
+function toggleSliderCertificates () {
+  if (window.innerWidth <= 1340) {
+    if (!swiperCertificates) {
       certificatesSliderInit();
     }
   } else {
-    if (swiper || swiperCertificates) {
+    if (swiperCertificates) {
       swiperCertificates.destroy(true, true);
       swiperCertificates = null;
+    }
+  }
+}
+
+function toggleSwiper() {
+  if (window.innerWidth <= 767) {
+    if (!swiper) {
+      sliderInit();
+    }
+  } else {
+    if (swiper) {
       swiper.destroy(true, true);
       swiper = null;
     }
@@ -137,9 +147,10 @@ function toggleSwiper() {
 }
 
 toggleSwiper();
-
+toggleSliderCertificates ();
 
 window.addEventListener('resize', toggleSwiper);
+window.addEventListener('resize', toggleSliderCertificates);
 btnBurger.addEventListener('click', toggleBtnBurger);
 btnMenuClose.addEventListener('click',closeMenu);
 btnArrow.addEventListener('click', toggleBtnArrow);
@@ -150,10 +161,11 @@ menuBurger.addEventListener('click', function (evt) {
   }
 });
 
-btnFormOpen.addEventListener('click', openFormApplay);
+// btnFormOpen.addEventListener('click', openFormApplay);
 btnFormClose.addEventListener('click', closeFormApplay);
 formContainer.addEventListener('click', function (evt) {
   if (evt.target.classList.contains('form--active')) {
     closeFormApplay();
   }
 });
+btnFormOpen.forEach(btn => btn.addEventListener('click', openFormApplay));

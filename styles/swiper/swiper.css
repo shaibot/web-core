@@ -1,20 +1,20 @@
-@media (min-width: 826px) {
-  .swiper {
+@media (min-width: 767px) {
+  .site-properties__items.swiper {
     z-index: 0;
   }
-  .swiper-slide {
+  .site-properties__item.swiper-slide {
     visibility: visible; /* Делаем слайды видимыми */
     opacity: 1; /* Устраняем возможные проблемы с прозрачностью */
     transform: translateX(0); /* Убираем любые трансформации */
     pointer-events: auto; /* Позволяем взаимодействие с элементами */
   }
 
-  .swiper-wrapper {
+  .site-properties__list .swiper-wrapper {
     display: block; /* Делаем обертку обычным блочным элементом */
     margin-bottom: 0;
   }
 
-  .swiper-pagination {
+  .site-properties__items .swiper-pagination {
     display: none;
   }
 }

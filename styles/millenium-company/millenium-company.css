@@ -285,7 +285,7 @@
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1430px) {
   .millenium-company__image {
     width: calc(100% + 250px); /* Занимает ширину родителя плюс отступы */
   margin-left: -125px; /* Половина отступа для центровки */

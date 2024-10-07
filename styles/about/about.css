@@ -106,7 +106,7 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1340px) {
     .about {
         padding-top: 26px;
         gap: 116px;
@@ -120,10 +120,10 @@
     }
 
     .about__image {
-        width: 738px;
+        width: 594px;
         top: 172px;
         left: 75%;
-        height: 500px;
+        height: 415px;
     }
 
 

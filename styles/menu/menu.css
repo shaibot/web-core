@@ -1,4 +1,4 @@
-.menu {
+.menu {width: 100%;
     box-shadow: inset 0px 5px 4px -3px rgba(0, 0, 0, 0.25);
     background-color: var(--lightbox-background-color);
     position: fixed;
@@ -51,8 +51,8 @@
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    top: 24px;
-    left: 10px;
+    top: 3%;
+    left: 3%;
     cursor: pointer;
 }
 
@@ -94,8 +94,9 @@
     margin: 0;
 }
 
-@media (min-width: 380px) {
+@media (min-width: 769px) {
     .menu__button-close {
-        transform: translateX(318px);
+        left: 90%;
+
     }
 }
